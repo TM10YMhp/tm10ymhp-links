@@ -1,3 +1,4 @@
+import Image from "next/image";
 import api from "./api";
 
 export default async function Home() {
@@ -6,7 +7,14 @@ export default async function Home() {
   return (
     <div className="flex flex-col gap-8 max-w-80">
       <div className="flex flex-col justify-center items-center gap-4">
-        <img className="w-24 rounded-full" src="/photo.webp" alt="photo" />
+        <Image
+          className="rounded-full"
+          width={96}
+          height={96}
+          src="/photo.webp"
+          alt="photo"
+          priority
+        />
         <div className="flex flex-col gap-1 items-center">
           <h1 className="text-xl font-bold">@tm10ymhp</h1>
           <p className="text-center">

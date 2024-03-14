@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "TM10YMhp | Links",
+  title: "TM10YMhp - Links",
   description: "Links de TM10YMhp",
 };
 
