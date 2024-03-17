@@ -28,11 +28,7 @@ export default function RootLayout({
           {children}
         </main>
       </body>
-      <GoogleTagManager
-        gtmId="GTM-P9QXKTHC"
-        preview="env-3"
-        auth="wVnAitTb0sgU6BsxVjIhPQ"
-      />
+      <GoogleTagManager gtmId="GTM-P9QXKTHC" />
     </html>
   );
 }
