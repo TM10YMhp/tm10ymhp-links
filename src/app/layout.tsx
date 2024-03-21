@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from "./layout.module.css";
 
 import "./globals.css";
 
@@ -17,18 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body
-        className={[
-          "text-white",
-          "before:bg-black/50 before:fixed before:inset-0 before:-z-10 before:min-h-screen",
-          "after:bg-[url('/background.webp')] after:bg-[#32252A]",
-          "after:bg-cover after:bg-top after:bg-no-repeat",
-          "after:fixed after:inset-0 after:-z-20 after:min-h-dvh",
-        ].join(" ")}
-      >
-        <main className="p-4 flex justify-center items-center min-h-screen [&>div]:!h-[unset]">
-          {children}
-        </main>
+      <body className={styles.background}>
+        <main className={styles.container}>{children}</main>
       </body>
     </html>
   );

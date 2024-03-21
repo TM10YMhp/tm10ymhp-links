@@ -1,0 +1,31 @@
+.linktree {
+  @apply flex flex-col gap-8 max-w-80;
+}
+
+.data {
+  @apply flex flex-col justify-center items-center gap-4;
+}
+
+.photo {
+  @apply rounded-full;
+}
+
+.info {
+  @apply flex flex-col gap-1 items-center;
+}
+.info__title {
+  @apply text-xl font-bold;
+}
+.info__description {
+  @apply text-center;
+}
+
+.links {
+  @apply flex flex-col gap-4;
+}
+.links__item {
+  @apply grid place-content-center w-full py-2.5;
+  @apply hover:scale-105 bg-black/50 duration-100;
+  @apply border border-white rounded-full;
+  @apply shadow-lg shadow-zinc-700;
+}
